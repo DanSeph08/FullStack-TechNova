@@ -1,0 +1,29 @@
+# Dependencias de Node.js
+node_modules/
+package-lock.json
+yarn.lock
+
+# Archivos de compilación y distribución
+dist/
+build/
+vite/
+
+# Configuración de herramientas de desarrollo
+.eslintcache
+.vscode/
+.idea/
+*.log
+
+# Variables de entorno y configuración local
+.env
+.env.local
+.env.development.local
+.env.production.local
+.env.test.local
+
+# Caché de TypeScript
+*.tsbuildinfo
+
+# Archivos de sistema (opcional)
+.DS_Store
+Thumbs.db

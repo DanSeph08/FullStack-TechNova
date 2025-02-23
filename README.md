@@ -1,2 +1,1 @@
 # FullStack-TechNova
-# FullStack-TechNova
