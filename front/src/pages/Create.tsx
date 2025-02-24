@@ -10,7 +10,11 @@ import { schemaActividad } from "../utils/schemaActividad";
 import { useNavigate } from "react-router-dom";
 
 const Create = () => {
+  //#region Querys
   const [createAct] = useCreateActividadMutation();
+  //#endregion
+
+  //#regeion initialValues, Navigate
   const navigate = useNavigate();
 
   const initialValues = {
@@ -23,7 +27,9 @@ const Create = () => {
     fecha: "",
     Equipo: "",
   };
+  //#endregion
 
+  //#region HandleCreate
   const handleCreate = async (values: Actividad) => {
     try {
       await createAct(values).unwrap();
@@ -33,6 +39,7 @@ const Create = () => {
       console.log(error);
     }
   };
+  //#endregion
 
   return (
     <>
